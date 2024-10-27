@@ -1,0 +1,163 @@
+@media screen and (max-width: 1200px) {
+  .works img {
+    width: 73%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .headbox {
+    width: 98%;
+  }
+  .works-box {
+    height: 263px;
+    width: 421px;
+  }
+  .main-img :last-child {
+    bottom: 123px;
+    right: -227px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .skills-img li img {
+    height: 140px;
+    width: 140px;
+  }
+  .skills-img li {
+    width: 163px;
+  }
+  .main-img :last-child {
+    bottom: -40px;
+    right: 111px;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .main-img :last-child {
+    height: 90px;
+    width: 90px;
+    position: relative;
+    bottom: 112px;
+    right: -217px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .skills-img li {
+    width: 130px;
+  }
+  .skills-img {
+    gap: 19px;
+  }
+  .skills-img li img {
+    height: 112px;
+    width: 103px;
+  }
+  .works-box {
+    height: 172px;
+    width: 301px;
+  }
+  .works img {
+    height: 183px;
+    width: 100%;
+  }
+  .main-img :nth-child(1) {
+    position: relative;
+    top: 70px;
+    height: 300px;
+    width: 300px;
+  }
+  #hello {
+    font-size: 46px;
+    width: 500px;
+  }
+  .main-img :last-child {
+    bottom: -48px;
+    right: 122px;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .main-img {
+    display: none;
+  }
+  #hello {
+    font-size: 66px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .skills-img li img {
+    display: none;
+  }
+  .contact1-pt2 img {
+    display: none;
+  }
+  .skills-bar {
+    position: relative;
+    left: 130px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+    nav div {
+        padding: 1px;
+    }
+    nav{
+        justify-content: center;
+    }
+    .works img{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:690px)  {
+    #hello {
+        font-size: 55px;
+        width: 100%;
+    }
+}
+
+@media screen  and (max-width:675px){
+    nav div {
+        font-size: 11px;
+    }
+    .res-cont{
+        position: relative;
+        top: 27px;
+    }
+}
+
+@media screen and (max-width:660px){
+    .works-box {
+        width: 100%;
+    }
+    .contact2 input{
+        width: 290px;
+    }
+    .contact2 button {
+        width: 290px;
+    }
+    .works {
+        height: 85vh;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:650px){
+    .skills-bar {
+        left: 13px;
+    }
+    .res-box {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width:620px){
+
+}
