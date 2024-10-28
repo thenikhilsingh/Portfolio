@@ -16,6 +16,10 @@
     bottom: 123px;
     right: -227px;
   }
+  .main-img :last-child {
+    bottom: 33px;
+    right: 166px;
+}
 }
 
 @media screen and (max-width: 1000px) {
@@ -123,6 +127,12 @@
   }
 }
 
+@media screen and (max-width: 650px) {
+  .skills-img li {
+    display: none;
+}
+}
+
 @media screen and (max-width: 675px) {
   nav div {
     font-size: 11px;
@@ -211,14 +221,14 @@
 @media screen and (max-width: 460px) {
   #name-div {
     font-size: 11px;
-}
-nav div {
-  font-size: 7px;
-}
+  }
+  nav div {
+    font-size: 7px;
+  }
 }
 
 @media screen and (max-width: 440px) {
   #hello {
     font-size: 36px;
-}
+  }
 }
