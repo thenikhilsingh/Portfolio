@@ -105,59 +105,120 @@
 }
 
 @media screen and (max-width: 770px) {
-    nav div {
-        padding: 1px;
-    }
-    nav{
-        justify-content: center;
-    }
-    .works img{
-        padding: 0;
-    }
+  nav div {
+    padding: 1px;
+  }
+  nav {
+    justify-content: center;
+  }
+  .works img {
+    padding: 0;
+  }
 }
 
-@media screen and (max-width:690px)  {
-    #hello {
-        font-size: 55px;
-        width: 100%;
-    }
+@media screen and (max-width: 690px) {
+  #hello {
+    font-size: 55px;
+    width: 100%;
+  }
 }
 
-@media screen  and (max-width:675px){
-    nav div {
-        font-size: 11px;
-    }
-    .res-cont{
-        position: relative;
-        top: 27px;
-    }
+@media screen and (max-width: 675px) {
+  nav div {
+    font-size: 11px;
+  }
+  .res-cont {
+    position: relative;
+    top: 27px;
+  }
 }
 
-@media screen and (max-width:660px){
-    .works-box {
-        width: 100%;
-    }
-    .contact2 input{
-        width: 290px;
-    }
-    .contact2 button {
-        width: 290px;
-    }
-    .works {
-        height: 85vh;
-        flex-direction: column;
-    }
+@media screen and (max-width: 660px) {
+  .works-box {
+    width: 100%;
+  }
+  .contact2 input {
+    width: 290px;
+  }
+  .contact2 button {
+    width: 290px;
+  }
+  .works {
+    height: 85vh;
+    flex-direction: column;
+  }
 }
 
-@media screen and (max-width:650px){
-    .skills-bar {
-        left: 13px;
-    }
-    .res-box {
-        font-size: 9px;
-    }
+@media screen and (max-width: 650px) {
+  .skills-bar {
+    left: 13px;
+  }
+  .res-box {
+    font-size: 9px;
+  }
 }
 
-@media screen and (max-width:620px){
+@media screen and (max-width: 620px) {
+  .skills-img li {
+    display: none;
+  }
+  .skills-img {
+    display: none;
+  }
+}
 
+@media screen and (max-width: 580px) {
+  #hello {
+    font-size: 42px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  nav div {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .contact {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .slidebar {
+    width: 345px;
+  }
+  .slider1 {
+    width: 320px;
+  }
+  .slider2 {
+    width: 270px;
+  }
+  .slider4 {
+    width: 305px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  #name-div {
+    font-size: 15px;
+  }
+  nav div {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  #name-div {
+    font-size: 11px;
+}
+nav div {
+  font-size: 7px;
+}
+}
+
+@media screen and (max-width: 440px) {
+  #hello {
+    font-size: 36px;
+}
 }

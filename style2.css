@@ -1,307 +1,320 @@
 .headbox {
-    /*Designing headbox*/
-    width: 100%;
-    height: 15vh;
-    display: flex;
-    align-items: last baseline;
-    overflow: hidden;
-    flex-wrap: nowrap;
-    color: var(--gray-color);
+  /*Designing headbox*/
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  align-items: last baseline;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  color: var(--gray-color);
 }
 
 .headbox2 {
-    border: 2px solid var(--gray-color);
-    width: 89%;
-    height: 0;
+  border: 2px solid var(--gray-color);
+  width: 89%;
+  height: 0;
 }
 
 .headbox-p {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .skills {
-    /*Designing Skills*/
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 70vh;
+  /*Designing Skills*/
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70vh;
 }
 
 .skills-bar {
-    list-style: none;
+  list-style: none;
 }
 
 .slidebar {
-    background-color: rgb(213 205 205);
-    width: 520px;
-    height: 15px;
-    border-radius: 15px;
+  background-color: rgb(213 205 205);
+  width: 520px;
+  height: 15px;
+  border-radius: 15px;
 }
 
 .slider {
-    background-color: var(--yellow-color);
-    height: 15px;
-    border-radius: 15px;
+  background-color: var(--yellow-color);
+  height: 15px;
+  border-radius: 15px;
+}
+
+.slider1 {
+  width: 500px;
+}
+.slider2 {
+  width: 400px;
+}
+.slider3 {
+  width: 150px;
+}
+.slider4 {
+  width: 450px;
 }
 
 .skills-bar li {
-    font-size: 40px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .skills-bar li img {
-    height: 28px;
-    width: 28px;
+  height: 28px;
+  width: 28px;
 }
 
 .skills-img {
-    display: flex;
-    flex-wrap: wrap;
-    width: 500px;
-    height: 400px;
-    gap: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  height: 400px;
+  gap: 50px;
 }
 
 .skills-img li {
-
-    list-style: none;
-    height: 180px;
-    width: 180px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  list-style: none;
+  height: 180px;
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .skills-img li img {
-    height: 200px;
-    width: 200px;
-    border-radius: 30px;
-    box-shadow: 5px 5px 15px 5px black;
+  height: 200px;
+  width: 200px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 15px 5px black;
 }
 
 .works {
-    /*Designing Works*/
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    height: 70vh;
-  }
-  
-  .works-box {
-    height: 290px;
-    width: 530px;
-    box-shadow: 0 0 10px 0 var(--gray-color);
-    background-color: rgb(228, 224, 224);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-    transition: all 0.3s ease-in-out; /* added transition effect */
-    position: relative; /* added relative positioning */
-  }
-  
-  .works-box:hover {
-    background-color: rgba(112, 106, 106, 0.548);
-    opacity: 1;
-    transform: scale(1.1); /* added scale effect */
-  }
-  
-  .works img {
-    height: 260px;
-    width: 500px;
-    border-radius: 10px;
-    padding: 40px;
-    border-radius: 15px;
-    transition: all 0.3s ease-in-out; /* added transition effect */
-  }
-  
-  .works img:hover {
-    background-color:  rgba(102, 106, 128, 0.548);
-    opacity: 0.118;
-    transform: scale(1.05); /* added scale effect */
-  }
-  
-  .buttons {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: row; /* changed to row */
-    justify-content: space-between;
-    align-items: center;
-    opacity: 0;
-    transition: all 0.3s ease-in-out; /* added transition effect */
-  }
-  
-  .works-box:hover .buttons {
-    opacity: 1;
-  }
-  
-  .buttons a{
-      text-decoration: none;
-      color: white;
-  }
-  
-  .demo-btn, .code-btn {
-    background-color: #4cafaf;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    margin: 0 10px; /* added margin for spacing */
-    transition: background-color 0.3s ease-in-out; /* added transition effect for background color only */
-  }
-  
-  .demo-btn:hover, .code-btn:hover {
-    background-color: #9ce9f7;
-  }
+  /*Designing Works*/
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  height: 70vh;
+}
+
+.works-box {
+  height: 290px;
+  width: 530px;
+  box-shadow: 0 0 10px 0 var(--gray-color);
+  background-color: rgb(228, 224, 224);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  transition: all 0.3s ease-in-out; /* added transition effect */
+  position: relative; /* added relative positioning */
+}
+
+.works-box:hover {
+  background-color: rgba(112, 106, 106, 0.548);
+  opacity: 1;
+  transform: scale(1.1); /* added scale effect */
+}
+
+.works img {
+  height: 260px;
+  width: 500px;
+  border-radius: 10px;
+  padding: 40px;
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out; /* added transition effect */
+}
+
+.works img:hover {
+  background-color: rgba(102, 106, 128, 0.548);
+  opacity: 0.118;
+  transform: scale(1.05); /* added scale effect */
+}
+
+.buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row; /* changed to row */
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.3s ease-in-out; /* added transition effect */
+}
+
+.works-box:hover .buttons {
+  opacity: 1;
+}
+
+.buttons a {
+  text-decoration: none;
+  color: white;
+}
+
+.demo-btn,
+.code-btn {
+  background-color: #4cafaf;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 10px; /* added margin for spacing */
+  transition: background-color 0.3s ease-in-out; /* added transition effect for background color only */
+}
+
+.demo-btn:hover,
+.code-btn:hover {
+  background-color: #9ce9f7;
+}
 
 .res-sec {
-    /*Designing Resume*/
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 70vh;
+  /*Designing Resume*/
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70vh;
 }
 
 .res-box {
-    border: 2px solid rgb(233, 163, 163);
-    width: 30vw;
-    border-radius: 8px;
-    padding: 5px;
-    box-shadow: 0 0 10px 0 rgb(233, 163, 163);
+  border: 2px solid rgb(233, 163, 163);
+  width: 30vw;
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: 0 0 10px 0 rgb(233, 163, 163);
 }
 
 .res-head {
-    border: 2px solid rgb(136, 132, 132);
-    width: 130px;
-    text-align: center;
-    border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 50px;
+  border: 2px solid rgb(136, 132, 132);
+  width: 130px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 50px;
 }
 
 .res-cont {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .org-name {
-    color: rgb(77, 74, 74);
-    margin-bottom: 5px;
-    margin-top: 5px;
+  color: rgb(77, 74, 74);
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 .time {
-    color: rgb(252, 216, 14);
-    margin-bottom: 5px;
+  color: rgb(252, 216, 14);
+  margin-bottom: 5px;
 }
 
 .contact {
-    /*Designing Contact*/
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 70vh;
+  /*Designing Contact*/
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70vh;
 }
 
 .contact1 {
-    display: flex;
+  display: flex;
 }
 
 .contact1-pt1 {
-    width: 250px;
+  width: 250px;
 }
 
 .contact1-pt1 h1 {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 .contact1-pt2 img {
-    box-shadow: 0 0 10px 0 rgb(97, 96, 96);
-    border-radius: 8px;
-    height: 50px;
-    width: 50px;
-    margin-top: 15px;
-    margin-left: 50px;
+  box-shadow: 0 0 10px 0 rgb(97, 96, 96);
+  border-radius: 8px;
+  height: 50px;
+  width: 50px;
+  margin-top: 15px;
+  margin-left: 50px;
 }
 
 @keyframes Appear {
-    from {
-        opacity: 0;
-        scale: 0.5;
-    }
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
 
-    to {
-        opacity: 1;
-        scale: 1;
-    }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
 }
 
 .contact2 {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact2 input {
-    width: 400px;
-    height: 30px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 15px 0 rgb(129, 126, 126);
+  width: 400px;
+  height: 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 15px 0 rgb(129, 126, 126);
 }
 
 .contact2 button {
-    width: 405px;
-    height: 30px;
-    background-color: rgb(241, 198, 4);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    cursor: pointer;
+  width: 405px;
+  height: 30px;
+  background-color: rgb(241, 198, 4);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 .hand-sec {
-    /*Designing Handles*/
-    text-align: center;
-    background-color: rgb(241, 198, 4);
-    height: 40vh;
+  /*Designing Handles*/
+  text-align: center;
+  background-color: rgb(241, 198, 4);
+  height: 40vh;
 }
 
 .hand {
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 20px;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
 }
 
 .hand-sec h1 {
-    font-size: 80px;
-    margin: 20px;
+  font-size: 80px;
+  margin: 20px;
 }
 
 .hand li {
-    margin: 0 10px 0 10px;
+  margin: 0 10px 0 10px;
 }
 
 .hand li img {
-    height: 30px;
-    width: 30px;
+  height: 30px;
+  width: 30px;
 }
 
 .hand-sec p {
-    margin-top: 30px;
-    margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-
