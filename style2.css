@@ -196,10 +196,10 @@
 
 .res-box-cont1 {
   display: flex;
-  animation: slide 4s infinite; /* Animation for sliding effect */
+  animation: sliding 4s infinite; /* Animation for sliding effect */
 }
 
-.res-box-cont1:hover{
+.res-box-cont1:hover {
   animation-play-state: paused;
 }
 
@@ -212,49 +212,50 @@
   flex-shrink: 0; /* Prevents boxes from shrinking */
 }
 
-.sliding2{
+.sliding2 {
   height: 291px;
   width: 381px;
   overflow: hidden;
   border: 2px solid rgb(233, 163, 163);
   border-radius: 8px;
   box-shadow: 0 0 10px 0 rgb(233, 163, 163);
+}
+
+.res-box-cont2 {
+  display: flex;
+  animation: sliding 4s infinite;
+}
+
+.res-box-cont2:hover {
+  animation-play-state: paused;
+}
+
+.res-box2,
+.res-box2-2 {
+  width: 350px;
+  height: 230px;
+  border-radius: 8px;
+  padding: 5px 5px 12px 24px;
+  flex-shrink: 0;
+}
+
+@keyframes sliding {
+  0% {
+    transform: translateX(0); /* Start position */
   }
-
-  .res-box-cont2{
-    display: flex;
-    animation: slide 4s infinite;
-    }
-
-    .res-box-cont2:hover{
-      animation-play-state: paused;
-    }
-
-    .res-box2,.res-box2-2{
-      width: 350px;
-      height: 230px;
-      border-radius: 8px;
-      padding: 5px 5px 12px 24px;
-      flex-shrink: 0;
-    }
-
-    @keyframes slide {
-      0% {
-        transform: translateX(0); /* Start position */
-      }
-      25% {
-        transform: translateX(-100%); /* Slide out the first box */
-      }
-      50% {
-        transform: translateX(-100%); /* Keep the second box in view */
-      }
-      75% {
-        transform: translateX(0); /* Slide back to show the first box */
-      }
-      100% {
-        transform: translateX(0); /* End position */
-      }
-    }
+  25% {
+    transform: translateX(-100%); /* Slide out the first box */
+  }
+  50% {
+    transform: translateX(-100%); /* Keep the second box in view */
+  }
+  75% {
+    transform: translateX(0); /* Slide back to show the first box */
+  }
+  100% {
+    transform: translateX(0); /* End position */
+  }
+}
 
 .res-head {
   border: 2px solid rgb(136, 132, 132);
@@ -272,7 +273,7 @@
   align-items: center;
 }
 
-.res-cont2{
+.res-cont2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
