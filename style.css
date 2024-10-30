@@ -1,263 +1,259 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
-:root{
-    --blue-color: #8efdfd;
-    --yellow-color: rgb(241, 198, 4);
-    --gray-color: rgb(136, 132, 132);
+:root {
+  --blue-color: #8efdfd;
+  --yellow-color: rgb(241, 198, 4);
+  --gray-color: rgb(136, 132, 132);
 }
 
 nav {
-    /*Designing navbar*/
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--Blue-color);
-    height: 15vh;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    animation: Nav-Scroll;
-    animation-timeline: scroll(y);
+  /*Designing navbar*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--Blue-color);
+  height: 15vh;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  animation: Nav-Scroll;
+  animation-timeline: scroll(y);
 }
 
 @keyframes Nav-Scroll {
+  /*NavBar Animation*/
+  0% {
+    background-color: var(--blue-color);
+  }
 
-    /*NavBar Animation*/
-    0% {
-        background-color: var(--blue-color);
-       
-    }
+  1% {
+    background-color: white;
+    box-shadow: 0 0 10px 0 black;
+  }
 
-    1% {
-        background-color: white;
-        box-shadow: 0 0 10px 0 black;
-    }
-
-    100% {
-        background-color: white;
-        box-shadow: 0 0 10px 0 black;
-    }
+  100% {
+    background-color: white;
+    box-shadow: 0 0 10px 0 black;
+  }
 }
 
 nav div {
-    display: flex;
-    list-style: none;
-    padding: 22px;
+  display: flex;
+  list-style: none;
+  padding: 22px;
 }
 
 nav div li {
-    padding: 7px;
-    margin: 8px;
-    font-weight: 540;
-    cursor: pointer;
+  padding: 7px;
+  margin: 8px;
+  font-weight: 540;
+  cursor: pointer;
 }
 
 nav div li a {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 nav div li a:hover {
-    color: var(--yellow-color);
+  color: var(--yellow-color);
 }
 
 #name-div {
-    font-weight: 600;
-    font-size: 20px;
-    cursor: pointer;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 #name-div a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 #Hire-Me {
-    background-color: black;
-    border-radius: 6px;
+  background-color: black;
+  border-radius: 6px;
 }
 
 #Hire-Me a {
-    color: white;
+  color: white;
 }
 
 #Hire-Me a:hover {
-    color: var(--yellow-color);
+  color: var(--yellow-color);
 }
 
-
 main {
-    /*Designing home*/
-    background-color: var(--blue-color);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 90vh;
+  /*Designing home*/
+  background-color: var(--blue-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90vh;
 }
 
 .main-info {
-    height: 40vh;
+  height: 40vh;
 }
 
 .main-img :last-child {
-    height: 90px;
-    width: 90px;
-    position: relative;
-    bottom: 40px;
-    right: 150px;
-    animation: rotate 10s linear infinite;
+  height: 90px;
+  width: 90px;
+  position: relative;
+  bottom: 40px;
+  right: 150px;
+  animation: rotate 10s linear infinite;
 }
 
 @keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    100% {
-        transform: rotate(360deg);
-    }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 #hello {
-    font-weight: bold;
-    font-size: 55px;
-    margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 55px;
+  margin-bottom: 10px;
 }
 
 .wrapper {
-    /*Text Typing Animation*/
-    display: flex;
+  /*Text Typing Animation*/
+  display: flex;
 }
 
 .wrapper .dynamic-txt {
-    margin-left: 15px;
-    line-height: 90px;
-    height: 90px;
-    overflow: hidden;
+  margin-left: 15px;
+  line-height: 90px;
+  height: 90px;
+  overflow: hidden;
 }
 
 .dynamic-txt li {
-    list-style: none;
-    color: var(--yellow-color);
-    font-size: 40px;
-    font-weight: 500;
-    position: relative;
-    top: 0;
-    animation: slide 12s steps(2) infinite;
+  list-style: none;
+  color: var(--yellow-color);
+  font-size: 40px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(2) infinite;
 }
 
 @keyframes slide {
-    100% {
-        top: -180px;
-        /* corrected the value to match the height of two list items */
-    }
+  100% {
+    top: -180px;
+    /* corrected the value to match the height of two list items */
+  }
 }
 
 .dynamic-txt li::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: var(--blue-color);
-    border-left: 2px solid var(--yellow-color);
-    animation: typing 3s steps(13) infinite;
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--blue-color);
+  border-left: 2px solid var(--yellow-color);
+  animation: typing 3s steps(13) infinite;
 }
 
 @keyframes typing {
+  40%,
+  60% {
+    left: calc(100% + 30px);
+  }
 
-    40%,
-    60% {
-        left: calc(100% + 30px);
-    }
-
-    100% {
-        left: 0;
-    }
+  100% {
+    left: 0;
+  }
 }
 
 .main-info :nth-child(3) {
-    color: rgb(70, 66, 66);
-    margin-top: 10px;
-    margin-bottom: 20px;
+  color: rgb(70, 66, 66);
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .main-btn {
-    margin-bottom: 20px;
-    font-size: 20px;
-    list-style: none;
-    display: flex;
-    align-items: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  list-style: none;
+  display: flex;
+  align-items: center;
 }
 
 #About-me {
-    background-color: black;
-    padding: 10px 40px 10px 40px;
-    border-radius: 5px;
-    margin-right: 25px;
-    cursor: pointer;
+  background-color: black;
+  padding: 10px 40px 10px 40px;
+  border-radius: 5px;
+  margin-right: 25px;
+  cursor: pointer;
 }
 
 #About-me a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 #About-me a:hover {
-    color: var(--yellow-color);
+  color: var(--yellow-color);
 }
 
 #Resume {
-    background-color: white;
-    padding: 10px 40px 10px 40px;
-    border-radius: 5px;
-    display: flex;
-    cursor: pointer;
+  background-color: white;
+  padding: 10px 40px 10px 40px;
+  border-radius: 5px;
+  display: flex;
+  cursor: pointer;
 }
 
 #Resume img {
-    height: 20px;
-    width: 20px;
+  height: 20px;
+  width: 20px;
 }
 
 #Resume a {
-    text-decoration: none;
-    color: black;
-    display: flex;
+  text-decoration: none;
+  color: black;
+  display: flex;
 }
 
 #Resume a:hover {
-    color: var(--yellow-color);
+  color: var(--yellow-color);
 }
 
 .handle {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .handle span {
-    height: 60px;
-    width: 60px;
+  height: 60px;
+  width: 60px;
 }
 
 #insta-handle {
-    position: relative;
-    top: 5px;
+  position: relative;
+  top: 5px;
 }
 
 .handle img {
-    height: 23px;
-    width: 23px;
-    cursor: pointer;
-    transition: height 0.8s, width 0.8s;
+  height: 23px;
+  width: 23px;
+  cursor: pointer;
+  transition: height 0.8s, width 0.8s;
 }
 
 .handle img:hover {
-    height: 30px;
-    width: 30px;
+  height: 30px;
+  width: 30px;
 }
