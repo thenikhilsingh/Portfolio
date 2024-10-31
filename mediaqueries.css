@@ -126,6 +126,12 @@
   }
 }
 
+@media screen and (max-width: 1030px) {
+  .skills-img {
+    width: 37%;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .skills-img li img {
     height: 140px;
