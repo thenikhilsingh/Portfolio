@@ -74,17 +74,9 @@ nav div li a:hover {
   color: black;
 }
 
-#Hire-Me {
-  background-color: black;
-  border-radius: 6px;
-}
-
-#Hire-Me a {
-  color: white;
-}
-
-#Hire-Me a:hover {
-  color: var(--yellow-color);
+#modebtn {
+ position: relative;
+ top: -4px;
 }
 
 main {
@@ -351,14 +343,13 @@ main {
   box-shadow: 5px 5px 15px 5px black;
 }
 
-.works {
-  /*Designing Works*/
-  list-style: none;
+.work-row{
   display: flex;
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  height: 70vh;
+  height: 60vh;
+  list-style: none;
 }
 
 .works-box {
@@ -431,6 +422,13 @@ main {
 .demo-btn:hover,
 .code-btn:hover {
   background-color: #9ce9f7;
+}
+
+.demo-btn:hover .works-box,
+.code-btn:hover .works-box {
+  background-color: rgba(102, 106, 128, 0.548);
+  opacity: 0.118;
+  transform: scale(1.05);
 }
 
 .res-sec {
@@ -609,7 +607,7 @@ main {
   border-radius: 8px;
 }
 
-.contact2 button a{
+.contact2 button a {
   text-decoration: none;
   color: white;
   display: flex;

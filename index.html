@@ -6,11 +6,9 @@
     <title>My Portfolio</title>
     <link rel="icon" href="Assets/portfolio-svg.svg" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="style2.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
   </head>
 
-  <body>
+  <body id="body">
     <nav>
       <!--Creating NavBar-->
       <div id="name-div"><a href="">Nikhil Singh</a></div>
@@ -20,7 +18,9 @@
         <li><a href="#Section3">WORKS</a></li>
         <li><a href="#Section4">RESUME</a></li>
         <li><a href="#Section5">CONTACT</a></li>
-        <li id="Hire-Me"><a href="#Section6">HIRE ME</a></li>
+        <li id="modebtn">
+          <img id="modebtnImg" src="Assets/Dark Mode.png" alt="" />
+        </li>
       </div>
     </nav>
 
@@ -125,42 +125,103 @@
       </div>
       <p class="headbox-p">Here are some my works</p>
       <div class="works">
-        <li>
-          <div class="works-box">
-            <img src="Assets/Netflix.png" alt="" />
-            <div class="buttons">
-              <button class="demo-btn">
-                <a href="https://thenikhilsingh.github.io/netflix-clone/"
-                  >Demo</a
-                >
-              </button>
-              <button class="code-btn">
-                <a href="https://github.com/thenikhilsingh/netflix-clone.git"
-                  >code</a
-                >
-              </button>
+        <div class="work-row">
+          <li>
+            <div class="works-box">
+              <img src="Assets/Rock Paper Scisors.png" alt="" />
+              <div class="buttons">
+                <button class="demo-btn">
+                  <a href="https://thenikhilsingh.github.io/Rock-Paper-Scissors/"
+                    >Demo</a
+                  >
+                </button>
+                <button class="code-btn">
+                  <a href="https://github.com/thenikhilsingh/Rock-Paper-Scissors"
+                    >code</a
+                  >
+                </button>
+              </div>
             </div>
-          </div>
-          <div>Netflix Clone</div>
-        </li>
-        <li>
-          <div class="works-box">
-            <img src="Assets/ULtraEdit.png" alt="" />
-            <div class="buttons">
-              <button class="demo-btn">
-                <a href="https://thenikhilsingh.github.io/ultraedit-clone/"
-                  >Demo</a
-                >
-              </button>
-              <button class="code-btn">
-                <a href="https://github.com/thenikhilsingh/ultraedit-clone.git"
-                  >code</a
-                >
-              </button>
+            <div>Rock Paper Scissors</div>
+          </li>
+          <li>
+            <div class="works-box">
+              <img src="Assets/Etch a Sketch.png" alt="" />
+              <div class="buttons">
+                <button class="demo-btn">
+                  <a href="https://github.com/thenikhilsingh/Etch-a-Sketch"
+                    >Demo</a
+                  >
+                </button>
+                <button class="code-btn">
+                  <a href="https://github.com/thenikhilsingh/ultraedit-clone.git"
+                    >code</a
+                  >
+                </button>
+              </div>
             </div>
-          </div>
-          <div>UltraEdit Clone</div>
-        </li>
+            <div>Etch a Sketch</div>
+          </li>
+        </div>
+
+        <div class="work-row">
+          <li>
+            <div class="works-box">
+              <img src="Assets/Calculator.png" alt="" />
+              <div class="buttons">
+                <button class="demo-btn">
+                  <a href="https://thenikhilsingh.github.io/Calculator/"
+                    >Demo</a
+                  >
+                </button>
+                <button class="code-btn">
+                  <a href="https://github.com/thenikhilsingh/Calculator"
+                    >code</a
+                  >
+                </button>
+              </div>
+            </div>
+            <div>Calculator</div>
+          </li>
+          <li>
+            <div class="works-box">
+              <img src="Assets/GIF Hunt.png" alt="" />
+              <div class="buttons">
+                <button class="demo-btn">
+                  <a href="https://thenikhilsingh.github.io/GIF-Hunt/"
+                    >Demo</a
+                  >
+                </button>
+                <button class="code-btn">
+                  <a href="https://github.com/thenikhilsingh/GIF-Hunt"
+                    >code</a
+                  >
+                </button>
+              </div>
+            </div>
+            <div>GIF Hunt</div>
+          </li>
+        </div>
+        <div class="work-row">
+          <li>
+            <div class="works-box">
+              <img src="Assets/Weather App.png" alt="" />
+              <div class="buttons">
+                <button class="demo-btn">
+                  <a href="https://thenikhilsingh.github.io/Weather-App/"
+                    >Demo</a
+                  >
+                </button>
+                <button class="code-btn">
+                  <a href="https://github.com/thenikhilsingh/Weather-App"
+                    >code</a
+                  >
+                </button>
+              </div>
+            </div>
+            <div>Weather App</div>
+          </li>
+        </div>
       </div>
     </div>
 
@@ -284,15 +345,27 @@
           </div>
         </div>
         <div class="contact2">
-          <input id="linktomail" type="email" placeholder="e.g. example@gmail.com"/>
+          <input
+            id="linktomail"
+            type="email"
+            placeholder="e.g. example@gmail.com"
+          />
           <input type="text" placeholder="e.g. Web Dev" />
-          <input style="padding-bottom: 80px" type="text" placeholder="Write your message" />
-          <button><a href="mailto:nikhilsingh26042004@gmail.com">Send&nbsp;<img src="Assets/paper-plane.png" alt="" /></a></button>
+          <input
+            style="padding-bottom: 80px"
+            type="text"
+            placeholder="Write your message"
+          />
+          <button>
+            <a href="mailto:nikhilsingh26042004@gmail.com"
+              >Send&nbsp;<img src="Assets/paper-plane.png" alt=""
+            /></a>
+          </button>
         </div>
       </div>
     </div>
 
-    <div id="Section6" class="hand-sec">
+    <div class="hand-sec">
       <!--Creating Handles-->
       <h1>Let's Talk</h1>
       <div class="hand">
@@ -323,5 +396,6 @@
       </div>
       <p>| Copyright &copy; 2024 Web Addicted All rights reserved |</p>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
