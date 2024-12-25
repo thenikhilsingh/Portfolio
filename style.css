@@ -6,8 +6,13 @@
 
 :root {
   --blue-color: #8efdfd;
-  --yellow-color: rgb(241, 198, 4);
+  --yellow-color: #f1c604;
   --gray-color: rgb(136, 132, 132);
+  --darkmode-color: #525555;
+}
+
+.dark {
+  --blue-color: #525555;
 }
 
 nav {
@@ -27,7 +32,7 @@ nav {
 @keyframes Nav-Scroll {
   /*NavBar Animation*/
   0% {
-    background-color: var(--blue-color);
+    /* background-color: var(--blue-color); */
   }
 
   1% {
@@ -45,6 +50,8 @@ nav div {
   display: flex;
   list-style: none;
   padding: 22px;
+  justify-content: center;
+  align-items: center;
 }
 
 nav div li {
@@ -63,6 +70,29 @@ nav div li a:hover {
   color: var(--yellow-color);
 }
 
+.ballCont {
+  background-color: black;
+  border-radius: 16px;
+  padding: 0;
+  width: 80px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: 2px solid black;
+}
+
+.ball {
+  height: 0px;
+  width: 0px;
+  border-radius: 100%;
+  margin: 0;
+  padding: 15px;
+  background-color: white;
+  transition-property: all;
+  transition-duration: 0s;
+  transition-timing-function: linear;
+}
+
 #name-div {
   font-weight: 600;
   font-size: 20px;
@@ -75,8 +105,8 @@ nav div li a:hover {
 }
 
 #modebtn {
- position: relative;
- top: -4px;
+  position: relative;
+  top: -4px;
 }
 
 main {
@@ -92,11 +122,16 @@ main {
   height: 40vh;
 }
 
+.main-img :first-child {
+  position: relative;
+  top: 25px;
+}
+
 .main-img :last-child {
   height: 90px;
   width: 90px;
   position: relative;
-  bottom: 40px;
+  bottom: -25px;
   right: 150px;
   animation: rotate 10s linear infinite;
 }
@@ -343,7 +378,16 @@ main {
   box-shadow: 5px 5px 15px 5px black;
 }
 
-.work-row{
+.skill1 {
+  background-color: black;
+}
+
+.skills3,
+.skills4 {
+  background-color: black;
+}
+
+.work-row {
   display: flex;
   justify-content: space-around;
   align-items: center;
