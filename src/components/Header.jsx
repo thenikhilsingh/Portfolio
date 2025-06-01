@@ -3,7 +3,7 @@ import moon from "../assets/moon.svg";
 
 export default function Header() {
   return (
-    <div className="flex justify-between items-center p-10 bg-[#8EFDFD] h-[20vh]">
+    <div className="flex justify-between items-center px-10  w-[100vw] h-[15vh] bg-[#8EFDFD] fixed z-10">
       <NavLink to="/">
         <div className="text-2xl font-bold">Nikhil Singh</div>
       </NavLink>

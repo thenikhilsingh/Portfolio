@@ -6,13 +6,21 @@ import instagram from "../assets/instagram.webp";
 import facebook from "../assets/facebook.webp";
 import twitter from "../assets/twitter.png";
 import myImage from "../assets/myImage.png";
+import FullStackDeveloper from "../assets/Full Stack Developer.png";
+import { TypeAnimation } from "react-type-animation";
 
 export default function Home() {
   return (
-    <div className="flex justify-around items-center h-[80vh] bg-[#8EFDFD]">
+    <div className="flex justify-around items-center h-[100vh] bg-[#8EFDFD] ">
       <div className="flex flex-col gap-5">
         <h1 className="text-5xl font-bold">Hello, I'm Nikhil Singh</h1>
-        <div className="text-4xl text-[#F1C604]">Web Developer</div>
+        <TypeAnimation
+          sequence={["Web Developer", 2000, "Software Engineer", 2000]}
+          wrapper="span"
+          speed={50}
+          repeat={Infinity}
+          className="text-4xl text-[#F1C604] font-bold"
+        />
         <p className="text-xl text-gray-700">
           B.Tech | CSE Branch | Abdul Kalam Technical University
         </p>
@@ -43,9 +51,14 @@ export default function Home() {
         </div>
       </div>
 
-      <div>
+      <div className="relative">
         <img className="size-96" src={myImage} alt="" />
-        <img src="" alt="" />
+        <img
+          className="size-20 absolute bottom-3 right-10 animate-spin"
+          style={{ animationDuration: "5s" }}
+          src={FullStackDeveloper}
+          alt=""
+        />
       </div>
     </div>
   );
