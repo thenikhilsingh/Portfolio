@@ -1,9 +1,24 @@
 import { NavLink } from "react-router-dom";
 import moon from "../assets/moon.svg";
+import { useState, useEffect } from "react";
 
 export default function Header() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
-    <div className="flex justify-between items-center px-10  w-[100vw] h-[15vh] bg-[#8EFDFD] fixed z-10">
+    <div
+      className={`flex justify-between items-center px-10 w-[100vw] h-[15vh] fixed z-10 transition-colors duration-300 ${
+        scrolled ? "bg-white shadow-xl" : "bg-[#8EFDFD]"
+      }`}
+    >
       <NavLink to="/">
         <div className="text-2xl font-bold">Nikhil Singh</div>
       </NavLink>
