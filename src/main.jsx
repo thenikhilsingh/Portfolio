@@ -9,11 +9,19 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Home from "./components/Home.jsx";
+import About from "./components/About.jsx";
+import Services from "./components/Services.jsx";
+import Projects from "./components/Projects.jsx";
+import Contact from "./components/Contact.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route path="" element={<Home />}></Route>
+      <Route path="/about" element={<About />}></Route>
+      <Route path="/services" element={<Services />}></Route>
+      <Route path="/projects" element={<Projects />}></Route>
+      <Route path="/contact" element={<Contact />}></Route>
     </Route>
   )
 );
