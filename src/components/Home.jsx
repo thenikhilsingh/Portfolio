@@ -3,8 +3,18 @@ import { mdiChevronRight } from "@mdi/js";
 import { useEffect } from "react";
 import Prism from "prismjs";
 import "prismjs/themes/prism-tomorrow.css";
+import TypingNameAnimation from "./TypingNameAnimation";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration (in ms)
+      once: true, // whether animation should happen only once
+    });
+  }, []);
+
   const code = `const services = [
      'UI/UX Design'
      'Web Development'
@@ -18,24 +28,25 @@ export default function Home() {
 
   return (
     <div className="size-full  bg-[linear-gradient(90deg,#1F1F22_0%,#1F1F22_70%,rgba(231,255,135,1)_70%,rgba(207,254,25,1)_85%,rgba(107,222,53,1)_100%)] p-15 flex flex-col gap-5 overflow-auto scrollbar-hide relative">
-      <div className="flex items-center w-[70%]">
+      <div data-aos="fade-right" className="flex items-center w-[70%]">
         <Icon path={mdiChevronRight} size={3.5} color="#9898a8" />
-        <div className="text-white text-5xl roboto-mono font-[700]">
-          Nikhil Singh
-          <span className="blinking-underscore">_</span>
-        </div>
+        <TypingNameAnimation
+          text="Nikhil Singh"
+          initialDelay={2000}
+          typeSpeed={120}
+        />
       </div>
-      <div className="text-6xl font-[700] w-[70%]">
+      <div data-aos="fade-right" className="text-6xl font-[700] w-[70%]">
         <span className="txt-gradient">Web Developer</span>{" "}
         <span className="text-[#9898a8] tasa-explorer">&</span>{" "}
         <span className="txt-gradient">Software Engineer</span>
       </div>
-      <p className="text-[#A4A7AB] text-xl w-[60%]">
+      <p data-aos="fade-right" className="text-[#A4A7AB] text-xl w-[60%]">
         As a web developer, I believe in simplicity and functionality. My work
         is about turning concepts into smooth, interactive websites where clean
         code meets thoughtful design.
       </p>
-      <pre className="p-4 w-[45%] text-sm shadow-lg">
+      <pre data-aos="fade-right" className="p-4 w-[45%] text-sm shadow-lg">
         <code className="language-js">{code}</code>
       </pre>
       <div>

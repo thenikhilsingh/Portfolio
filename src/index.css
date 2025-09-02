@@ -1,13 +1,19 @@
 @import "tailwindcss";
 
 .blinking-underscore {
-  animation: blink 1s steps(3, start) infinite;
+  animation: blink-cursor 1s steps(3, start) infinite;
 }
-@keyframes blink {
-  to {
-    visibility: hidden;
+@keyframes blink-cursor {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
   }
 }
+
 .txt-gradient {
   background: linear-gradient(180deg, #b7ff3c, #26d53a);
   -webkit-background-clip: text;
@@ -104,3 +110,4 @@ pre[class*="language-"] {
 .blink {
   animation: blink 1s step-end infinite;
 }
+

@@ -1,7 +1,9 @@
 import Icon from "@mdi/react";
 import { mdiChevronRight } from "@mdi/js";
 import React, { useEffect, useState } from "react";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { motion } from "framer-motion";
 const backendTechnologies = [
   {
     logo: "nodejs.svg",
@@ -108,6 +110,13 @@ const careerDetails = [
 ];
 
 export default function About() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration (in ms)
+      easing: "ease-out-cubic", // smooth acceleration + deceleration
+      once: true, // whether animation should happen only once
+    });
+  }, []);
   const words = ["Front-End Development", "Back-End Development"];
 
   const TYPING_SPEED = 70;
@@ -185,6 +194,8 @@ export default function About() {
                 {backendTechnologies.map((tech, i) => (
                   <div className="flex">
                     <div
+                      data-aos="fade-right"
+                      data-aos-delay={i * 200}
                       key={i}
                       className="flex justify-between items-center w-55"
                     >
@@ -215,6 +226,8 @@ export default function About() {
                 {frontendTechnologies.map((tech, i) => (
                   <div className="flex">
                     <div
+                      data-aos="fade-right"
+                      data-aos-delay={i * 200}
                       key={i}
                       className="flex justify-between items-center w-55"
                     >
@@ -238,7 +251,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="p-10">
+          <div data-aos="fade-up" className="p-10">
             {details.map((detail) => (
               <div className="flex flex-col justify-around h-42">
                 <h1 className="flex text-2xl font-bold gap-2">
@@ -252,24 +265,40 @@ export default function About() {
         </div>
       </div>
 
-      <div className="bg-white w-[100%] flex justify-center  p-10">
-        {careerDetails.map((section) => (
-          <div className="flex w-[40%]">
-            <div className="w-full">
-              <div>
+      <div className="bg-white w-full flex justify-around p-10">
+        {careerDetails.map((section, idx) => (
+          <div key={idx} className="w-[40%] flex flex-col">
+            <div className="flex flex-col  gap-10 justify-between h-full">
+              <div className="flex flex-col gap-5">
                 <h1 className="text-4xl font-bold">{section.heading}</h1>
-                <div className="bg-[#A3F026] w-[100%] h-2"></div>
+                {
+                  <motion.div
+                    initial={{ width: 0 }}
+                    whileInView={{ width: "100%" }}
+                    transition={{ duration: 1.5, ease: "easeInOut" }}
+                    viewport={{ once: true }}
+                    className="bg-[#A3F026] w-full h-[6px]"
+                  />
+                }
               </div>
-
-              {section.details.map((item, idx) => (
-                <div key={idx}>
-                  <div className="flex justify-between">
-                    <div>{item.OrgName}</div>
-                    <div>{item.duration}</div>
+              <div className="flex flex-col gap-5 flex-grow justify-between">
+                {section.details.map((item, i) => (
+                  <div key={i}>
+                    <div className="flex flex-col gap-5">
+                      <div className="flex justify-between">
+                        <div className="text-xl font-medium">
+                          {item.OrgName}
+                        </div>
+                        <div className="text-lg font-medium text-[#888D97]">
+                          {item.duration}
+                        </div>
+                      </div>
+                      <div className="text-lg">{item.role}</div>
+                    </div>
+                    <hr className="border-0 border-t border-[#c2c2cc] mt-5" />
                   </div>
-                  <div>{item.role}</div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         ))}
