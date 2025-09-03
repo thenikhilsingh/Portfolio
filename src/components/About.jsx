@@ -112,9 +112,9 @@ const careerDetails = [
 export default function About() {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // animation duration (in ms)
-      easing: "ease-out-cubic", // smooth acceleration + deceleration
-      once: true, // whether animation should happen only once
+      duration: 1000, 
+      easing: "ease-out-cubic", 
+      once: true, 
     });
   }, []);
   const words = ["Front-End Development", "Back-End Development"];
