@@ -1,11 +1,13 @@
 import Icon from "@mdi/react";
 import { mdiPhone, mdiEmailOutline, mdiLinkedin, mdiGithub } from "@mdi/js";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Contact() {
   return (
     <div className="size-full overflow-auto scrollbar-hide">
       <div className="bg-[#18181B] w-full h-[950px] flex">
-        <div className="w-[35%] h-full text-white text-lg p-8 flex flex-col gap-5">
+        <div data-aos="fade-right" className="w-[35%] h-full text-white text-lg p-8 flex flex-col gap-5">
           <h1 className="text-4xl font-bold">Get in touch</h1>
           <div className="text-4xl font-bold txt-gradient">
             Let's talk about your project
@@ -26,7 +28,11 @@ export default function Contact() {
               <Icon path={mdiEmailOutline} size={1} />
               <div>
                 Email:{" "}
-                <a href="mailto:nikhilsingh26042004@gmail.com">
+                <a
+                  className="underline decoration-[#AFF322] underline-offset-4 hover:decoration-2
+                "
+                  href="mailto:nikhilsingh26042004@gmail.com"
+                >
                   nikhilsingh26042004@gmail.com
                 </a>
               </div>
@@ -34,18 +40,32 @@ export default function Contact() {
             <div className="flex items-center gap-2">
               <Icon path={mdiLinkedin} size={1} />
               <div>
-                Linkedin: <a href="">Nikhil Singh</a>
+                Linkedin:{" "}
+                <a
+                  className="underline decoration-[#AFF322] underline-offset-4 hover:decoration-2
+                "
+                  href=""
+                >
+                  Nikhil Singh
+                </a>
               </div>
             </div>
             <div className="flex items-center gap-2">
               <Icon path={mdiGithub} size={1} />
               <div>
-                GitHub: <a href="">thenikhilsingh</a>
+                GitHub:{" "}
+                <a
+                  className="underline decoration-[#AFF322] underline-offset-4 hover:decoration-2
+                "
+                  href=""
+                >
+                  thenikhilsingh
+                </a>
               </div>
             </div>
           </div>
         </div>
-        <div className="w-[65%] h-fit p-8">
+        <div data-aos="zoom-in" className="w-[65%] h-fit p-8">
           <div className="w-full h-fit relative">
             <div className="size-full bg-[#3F3F46] absolute top-0 left-0"></div>
             <form
