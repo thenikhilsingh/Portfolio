@@ -2,12 +2,10 @@ import Icon from "@mdi/react";
 import { mdiStarOutline, mdiSourceFork } from "@mdi/js";
 import { ospDetails, lpDetails } from "../data/projectsData";
 import { useState } from "react";
-import AOS from "aos";
 import "aos/dist/aos.css";
 
 export default function Projects() {
   const [showAll, setShowAll] = useState(false);
-  const [btnTxt, setBtnTxt] = useState("Show More");
   const visibleProjects = showAll ? ospDetails : ospDetails.slice(0, 3);
 
   function handleClick() {

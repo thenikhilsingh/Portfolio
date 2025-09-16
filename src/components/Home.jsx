@@ -6,12 +6,13 @@ import "prismjs/themes/prism-tomorrow.css";
 import TypingNameAnimation from "./TypingNameAnimation";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { CodeBlock } from "./ui/code-block";
 
 export default function Home() {
   useEffect(() => {
     AOS.init({
-      duration: 1000, 
-      once: true, 
+      duration: 1000,
+      once: true,
     });
   }, []);
 
@@ -21,10 +22,6 @@ export default function Home() {
      'Mobile App Development'
     ]
     if (have_a_project) navigate('/contact')`;
-
-  useEffect(() => {
-    Prism.highlightAll();
-  }, []);
 
   return (
     <div className="size-full  bg-[linear-gradient(90deg,#1F1F22_0%,#1F1F22_70%,rgba(231,255,135,1)_70%,rgba(207,254,25,1)_85%,rgba(107,222,53,1)_100%)] p-15 flex flex-col gap-5 overflow-auto scrollbar-hide relative">
@@ -46,9 +43,8 @@ export default function Home() {
         is about turning concepts into smooth, interactive websites where clean
         code meets thoughtful design.
       </p>
-      <pre data-aos="fade-right" className="p-4 w-[45%] text-sm shadow-lg">
-        <code className="language-js">{code}</code>
-      </pre>
+      <CodeBlock language="javascript" highlightLines={[2, 3, 4]} code={code} />
+
       <div>
         <div className="bg-[#222225] flex justify-around shadow-lg p-6 absolute w-[90%]">
           <div className="flex flex-col gap-5">
