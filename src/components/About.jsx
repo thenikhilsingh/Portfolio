@@ -72,7 +72,7 @@ export default function About() {
           <div className="bg-black text-white text-4xl font-bold p-3">
             NIKHIL SINGH
           </div>
-          <div className="flex flex-col gap-10 pb-7">
+          <div className="flex flex-col gap-10 pb-10">
             <h1 className="text-white font-bold text-5xl text-center">Ready to discuss your project?</h1>
             <div> 
               <p className="text-white font-bold text-[15px] text-center">Let's super-charge your business today!</p>
