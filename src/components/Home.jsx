@@ -45,7 +45,8 @@ export default function Home() {
       </p>
       <CodeBlock language="javascript" highlightLines={[2, 3, 4]} code={code} />
 
-      <div>
+      <div className="w-full absolute bottom-50">
+        <div className="relative left-[48%]"><img src="img-home.png" alt="" /></div>
         <div className="bg-[#222225] flex justify-around shadow-lg p-6 absolute w-[90%]">
           <div className="flex flex-col gap-5">
             <div className="flex items-center gap-4">
