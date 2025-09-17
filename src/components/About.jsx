@@ -74,7 +74,7 @@ export default function About() {
           </div>
           <div className="flex flex-col gap-10 pb-7">
             <h1 className="text-white font-bold text-5xl text-center">Ready to discuss your project?</h1>
-            <div>
+            <div> 
               <p className="text-white font-bold text-[15px] text-center">Let's super-charge your business today!</p>
               <div className="relative text-black mt-4">
                 <div className="h-13 w-70 bg-[linear-gradient(90deg,rgba(231,255,135,1)_5%,rgba(207,254,25,1)_40%,rgba(107,222,53,1)_90%)] absolute top-0 left-0"></div>
