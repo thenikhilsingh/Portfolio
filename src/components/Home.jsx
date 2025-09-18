@@ -7,6 +7,7 @@ import TypingNameAnimation from "./TypingNameAnimation";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { CodeBlock } from "./ui/code-block";
+import { NavLink } from "react-router-dom";
 
 export default function Home() {
   useEffect(() => {
@@ -46,7 +47,9 @@ export default function Home() {
       <CodeBlock language="javascript" highlightLines={[2, 3, 4]} code={code} />
 
       <div className="w-full absolute bottom-50">
-        <div className="relative left-[48%]"><img src="img-home.png" alt="" /></div>
+        <div className="relative left-[48%]">
+          <img src="img-home.png" alt="" />
+        </div>
         <div className="bg-[#222225] flex justify-around shadow-lg p-6 absolute w-[90%]">
           <div className="flex flex-col gap-5">
             <div className="flex items-center gap-4">
@@ -72,14 +75,18 @@ export default function Home() {
             <div>
               <div className="h-13 w-45 bg-[linear-gradient(90deg,rgba(231,255,135,1)_5%,rgba(207,254,25,1)_40%,rgba(107,222,53,1)_90%)] absolute"></div>
               <div className="h-13 w-45 flex items-center justify-center bg-white relative  -translate-x-2 -translate-y-2 hover:translate-x-0 hover:translate-y-0 transition-all duration-300 ease-in-out">
-                <a href="">Download Resume</a>
+                <a href="/Resume.pdf" download="Nikhil_Singh_Resume.pdf">
+                  Download Resume
+                </a>
               </div>
             </div>
-            <div className="text-white text-lg ">
-              <a className="gradient-underline" href="">
-                Get in Touch
-              </a>
-            </div>
+            <NavLink to="/contact">
+              <div className="text-white text-lg ">
+                <a className="gradient-underline" href="">
+                  Get in Touch
+                </a>
+              </div>
+            </NavLink>
           </div>
         </div>
       </div>

@@ -10,6 +10,7 @@ import {
   details,
   careerDetails,
 } from "../data/aboutData.js";
+import { NavLink } from "react-router-dom";
 
 export default function About() {
   useEffect(() => {
@@ -76,12 +77,14 @@ export default function About() {
             <h1 className="text-white font-bold text-5xl text-center">Ready to discuss your project?</h1>
             <div> 
               <p className="text-white font-bold text-[15px] text-center">Let's super-charge your business today!</p>
-              <div className="relative text-black mt-4">
-                <div className="h-13 w-70 bg-[linear-gradient(90deg,rgba(231,255,135,1)_5%,rgba(207,254,25,1)_40%,rgba(107,222,53,1)_90%)] absolute top-0 left-0"></div>
-                <div className="h-13 w-70 flex items-center justify-center bg-white relative  -translate-x-2 -translate-y-2 hover:translate-x-0 hover:translate-y-0 transition-all duration-300 ease-in-out">
-                  <a href="">Get a Free Price Quote</a>
+              <NavLink to="/contact">
+                <div className="relative text-black mt-4">
+                  <div className="h-13 w-70 bg-[linear-gradient(90deg,rgba(231,255,135,1)_5%,rgba(207,254,25,1)_40%,rgba(107,222,53,1)_90%)] absolute top-0 left-0"></div>
+                  <div className="h-13 w-70 flex items-center justify-center bg-white relative  -translate-x-2 -translate-y-2 hover:translate-x-0 hover:translate-y-0 transition-all duration-300 ease-in-out">
+                    <a href="">Get a Free Price Quote</a>
+                  </div>
                 </div>
-              </div>
+              </NavLink>
             </div>
           </div>
         </div>
