@@ -1,46 +1,46 @@
 const servicesDetails = [
   {
     src: "service1.png",
-    heading: "Web and Mobile App Design",
+    heading: "Front-End Development",
     paragraph:
-      "Defining the problem, identifying the scope and finally, organizing. Et tempor non mollit dolor et do aute voluptate ea ullamco culpa pariatur.",
+      "I specialize in building clean, responsive, and interactive interfaces using React.js, TailwindCSS, and JavaScript. Every project is optimized for performance and usability.",
     listItems: [
-      "Design Strategy",
-      "Web and Mobile App Design",
-      "Front-end Development",
+      "Responsive layouts",
+      "Dynamic React.js components",
+      "Modern styling",
     ],
   },
   {
     src: "service2.png",
-    heading: "Project Strategy & Development",
+    heading: "Full-Stack Web Development",
     paragraph:
-      "Defining the problem, identifying the scope and finally, organizing. Et tempor non mollit dolor et do aute voluptate ea ullamco culpa pariatur.",
+      "From front-end to back-end, I can develop complete web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js).",
     listItems: [
-      "Design Strategy",
-      "Web and Mobile App Design",
-      "Front-end Development",
+      "REST APIs",
+      "Secure back-end",
+      "Deployment ready",
     ],
   },
   {
     src: "service3.png",
-    heading: "UI/UX Design & Optimization",
+    heading: "UI/UX Implementation",
     paragraph:
-      "Defining the problem, identifying the scope and finally, organizing. Et tempor non mollit dolor et do aute voluptate ea ullamco culpa pariatur.",
+      "I transform design concepts into functional, user-friendly interfaces that enhance engagement and accessibility.",
     listItems: [
-      "Design Strategy",
-      "Web and Mobile App Design",
-      "Front-end Development",
+      "Wireframe to code",
+      "Clean layouts",
+      "Fast performance",
     ],
   },
   {
     src: "service4.png",
-    heading: "Application Audit & Debugging",
+    heading: "Code Maintenance & Debugging",
     paragraph:
-      "Defining the problem, identifying the scope and finally, organizing. Et tempor non mollit dolor et do aute voluptate ea ullamco culpa pariatur.",
+      "I provide support for existing applications by fixing bugs, optimizing performance, and maintaining clean, reliable code.",
     listItems: [
-      "Design Strategy",
-      "Web and Mobile App Design",
-      "Front-end Development",
+      "Debugging issues",
+      "Code cleanup",
+      "Speed optimization",
     ],
   },
 ];
