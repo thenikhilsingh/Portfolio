@@ -23,8 +23,6 @@ export default function Projects() {
           <div className="flex flex-wrap items-center gap-10">
             {visibleProjects.map((detail, i) => (
               <a
-                data-aos="fade-up"
-                data-aos-delay={i * 200}
                 target="_blank"
                 href={detail.link}
               >
