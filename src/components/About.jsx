@@ -69,7 +69,7 @@ export default function About() {
   return (
     <div className="size-full overflow-auto scrollbar-hide ">
       <div className="flex">
-        <div className="w-[30%] h-[1140px]  bg-[#AAAAAA] bg-[url(img-about.png)] bg-[center_60%] bg-contain bg-no-repeat flex flex-col justify-between items-center p-11">
+        <div className="w-[30%] h-[1140px]  bg-[#AAAAAA] bg-[url(/img-about.png)] bg-[center_60%] bg-contain bg-no-repeat flex flex-col justify-between items-center p-11">
           <div className="bg-black text-white text-4xl font-bold p-3">
             NIKHIL SINGH
           </div>
