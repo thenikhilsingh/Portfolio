@@ -29,7 +29,7 @@ export default function Home() {
       <div className="mt-10 md:hidden">
         <img className="size-50" src="/img-home-mobile.png" alt="" />
       </div>
-      <div data-aos="fade-right" className="flex justify-center items-center w-full md:w-[70%]">
+      <div data-aos="fade-right" className="flex justify-center md:justify-start items-center w-full md:w-[70%]">
         <Icon className="hidden md:block" path={mdiChevronRight} size={3.5} color="#9898a8" />
         <TypingNameAnimation
           text="Nikhil Singh"
@@ -37,7 +37,7 @@ export default function Home() {
           typeSpeed={120}
         />
       </div>
-      <div data-aos="fade-right" className="text-4xl md:text-5xl lg:text-6xl font-[700] text-center md:w-[70%]">
+      <div data-aos="fade-right" className="text-4xl md:text-5xl lg:text-6xl font-[700] text-center lg:text-left md:w-[70%]">
         <span className="txt-gradient">Web Developer</span>{" "}
         <span className="text-[#9898a8] tasa-explorer">&</span>{" "}
         <span className="txt-gradient">Software Engineer</span>
@@ -53,7 +53,7 @@ export default function Home() {
         <div className="relative left-[48%] hidden md:block">
           <img className=" w-[42%]" src="img-home.png" alt="" />
         </div>
-          <div className="w-full md:w-[90%] bg-[linear-gradient(90deg,rgba(231,255,135,1)_5%,rgba(207,254,25,1)_40%,rgba(107,222,53,1)_90%)] h-[1px] hidden md:block"></div>
+          <div className="w-full md:w-[90%] bg-[linear-gradient(90deg,rgba(231,255,135,1)_5%,rgba(207,254,25,1)_40%,rgba(107,222,53,1)_90%)] h-[1px] hidden md:block xl:hidden"></div>
         <div className="md:bg-[#222225] flex md:flex-col xl:flex-row md:items-center xl:items-start md:gap-10 xl:gap-0 justify-center sm:justify-around shadow-lg p-6 absolute md:w-[90%] w-full">
           <div className="flex sm:gap-10">
           <div className="flex flex-col gap-5">
