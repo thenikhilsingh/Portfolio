@@ -22,10 +22,7 @@ export default function Projects() {
           </p>
           <div className="flex flex-wrap items-center gap-10">
             {visibleProjects.map((detail, i) => (
-              <a
-                target="_blank"
-                href={detail.link}
-              >
+              <a target="_blank" href={detail.link}>
                 <div className=" text-black text-md font-medium w-[340px] h-40 group">
                   <div className="bg-[linear-gradient(90deg,rgba(231,255,135,1)_5%,rgba(207,254,25,1)_40%,rgba(107,222,53,1)_90%)] p-5 h-[85%] flex flex-col gap-2">
                     <div className="text-2xl">
@@ -50,9 +47,10 @@ export default function Projects() {
             ))}
           </div>
           <div className="relative text-black mt-4 w-full flex justify-center">
-            <div className="h-13 w-60 bg-[linear-gradient(90deg,rgba(231,255,135,1)_5%,rgba(207,254,25,1)_40%,rgba(107,222,53,1)_90%)] absolute top-0 left-[50]"></div>
-            <div className="h-13 w-60 flex items-center justify-center bg-white relative  -translate-x-2 -translate-y-2 hover:translate-x-0 hover:translate-y-0 transition-all duration-300 ease-in-out">
-              <button onClick={handleClick}>
+            <div className="h-[52px] w-[240px] bg-[linear-gradient(90deg,rgba(231,255,135,1)_5%,rgba(207,254,25,1)_40%,rgba(107,222,53,1)_90%)] absolute top-0 left-1/2 -translate-x-1/2"></div>
+
+            <div className="h-[52px] w-[240px] flex items-center justify-center bg-white relative -translate-x-[6px] -translate-y-[6px] hover:translate-x-0 hover:translate-y-0 transition-all duration-300 ease-in-out shadow-md">
+              <button onClick={handleClick} className="font-semibold">
                 {showAll ? "Show Less" : "Show More"}
               </button>
             </div>
