@@ -1,3 +1,4 @@
+import React from "react";
 import Icon from "@mdi/react";
 import {
   mdiHomeOutline,
@@ -8,6 +9,7 @@ import {
   mdiGithub,
   mdiInstagram,
   mdiLinkedin,
+  mdiDotsHorizontal,
 } from "@mdi/js";
 import { NavLink } from "react-router-dom";
 
@@ -15,8 +17,9 @@ const NavItems = [
   { name: "Home", to: "/", icon: mdiHomeOutline },
   { name: "About", to: "/about", icon: mdiAccountOutline },
   { name: "Services", to: "/services", icon: mdiToolboxOutline },
-  { name: "Projects", to: "/projects", icon: mdiTrophyVariantOutline },
-  { name: "Contact", to: "/contact", icon: mdiEmailOutline },
+  { name: "", to: "/more", icon: mdiDotsHorizontal },
+  //   { name: "Projects", to: "/projects", icon: mdiTrophyVariantOutline },
+  //   { name: "Contact", to: "/contact", icon: mdiEmailOutline },
 ];
 
 const NavSocials = [
@@ -31,18 +34,18 @@ const NavSocials = [
   },
 ];
 
-export default function NavBar() {
+export default function MobileNavbar() {
   return (
-    <div className="bg-[linear-gradient(90deg,rgb(26,26,29)_0%,rgb(29,29,32)_100%)]  flex-col justify-between md:w-[8%] lg:w-[5%] h-[87%] hidden md:flex">
-      <div className="flex flex-col">
+    <div className="bg-[linear-gradient(90deg,rgb(26,26,29)_0%,rgb(29,29,32)_100%)] flex flex-col justify-between items-center w-full md:hidden fixed bottom-0">
+      <div className="flex">
         {NavItems.map((item) => (
           <div key={item.name} className="group flex relative">
             <NavLink
               to={item.to}
               className={({ isActive }) =>
                 isActive
-                  ? "w-[100%] h-15 flex justify-center items-center bg-[linear-gradient(210deg,rgba(231,255,135,1)0%,rgba(207,254,25,1)_0%,rgba(107,222,53,1)_100%)] text-black"
-                  : "w-[100%] h-15 flex justify-center items-center bg-[linear-gradient(180deg,rgb(26,26,29)_0%,rgb(29,29,32)_100%)] text-white relative hover:bg-[#3B82F6] transition-colors duration-500"
+                  ? "w-26 sm:w-40 h-15 flex flex-col justify-center items-center bg-[linear-gradient(210deg,rgba(231,255,135,1)0%,rgba(207,254,25,1)_0%,rgba(107,222,53,1)_100%)] text-black"
+                  : "w-26 sm:w-40  h-15 flex flex-col justify-center items-center bg-[linear-gradient(180deg,rgb(26,26,29)_0%,rgb(29,29,32)_100%)] text-white relative hover:bg-[#3B82F6] transition-colors duration-500"
               }
             >
               {({ isActive }) => (
@@ -52,14 +55,7 @@ export default function NavBar() {
                     size={1.3}
                     color={isActive ? "black" : "white"}
                   />
-                  {!isActive && (
-                    <div
-                      className="bg-[#3B82F6] text-white absolute opacity-0 -translate-x-12 transition-all duration-500 
-                group-hover:opacity-100 group-hover:-translate-x-20 w-26 h-15 flex items-center justify-center"
-                    >
-                      {item.name}
-                    </div>
-                  )}
+                  {!isActive ?<div className=" text-white  text-md font-bold">{item.name}</div>:<div className=" text-black text-md font-bold ">{item.name}</div>}
                 </>
               )}
             </NavLink>
@@ -67,7 +63,7 @@ export default function NavBar() {
         ))}
       </div>
 
-      <div className="flex flex-col bg-[linear-gradient(180deg,rgb(26,26,29)_0%,rgb(29,29,32)_100%)]">
+      {/* <div className="flex flex-col bg-[linear-gradient(180deg,rgb(26,26,29)_0%,rgb(29,29,32)_100%)]">
         {NavSocials.map((social) => (
           <a
             href={social.link}
@@ -77,7 +73,7 @@ export default function NavBar() {
             <Icon path={social.icon} size={1.3} />
           </a>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }

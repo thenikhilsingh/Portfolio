@@ -32,7 +32,7 @@ export const CodeBlock = ({
     : highlightLines;
 
   return (
-    <div className="relative w-[50%] bg-black p-4 font-mono text-sm">
+    <div className="relative w-[95%] md:w-[70%] md:z-40 lg:z-0 lg:w-[50%] bg-[#00000083] p-4 font-mono text-sm">
       <SyntaxHighlighter
         language={activeLanguage}
         style={atomDark}

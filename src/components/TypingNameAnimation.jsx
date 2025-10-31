@@ -34,7 +34,7 @@ export default function TypingNameAnimation({
   }, [text, initialDelay, typeSpeed]);
 
   return (
-    <div className="text-white text-5xl roboto-mono font-[700]">
+    <div className="text-white text-3xl md:text-4xl lg:text-5xl roboto-mono font-[700]">
       {displayed}
       <span
         className={"blinking-underscore ml-1" + (isTyping ? " typing" : "")}
