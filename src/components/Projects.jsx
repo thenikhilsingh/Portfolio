@@ -14,16 +14,17 @@ export default function Projects() {
 
   return (
     <div className="size-full overflow-auto scrollbar-hide">
-      <div className="bg-[#212124] text-white size-full p-10 flex flex-col gap-15 h-fit">
-        <div className="flex flex-col gap-10">
-          <h1 className="text-4xl font-bold">My Open-Source Projects</h1>
-          <p className="text-lg text-[#D1D5DB]">
+      <div className="bg-[#212124] text-white size-full lg:p-10 flex flex-col gap-15 h-fit">
+        <div className="flex flex-col lg:gap-10">
+          <h1 className="text-4xl font-bold p-5 lg:p-0 bg-[#1c1c1d] lg:bg-[#212124]">My Open-Source Projects</h1>
+           <div className="lg:hidden h-[1px] w-[100vw] bg-gradient-to-r from-blue-500 via-green-400 to-yellow-400"></div>
+          <p className="text-lg text-[#D1D5DB] p-5 lg:p-0">
             Discover my most popular open-source projects on Github.
           </p>
-          <div className="flex flex-wrap items-center gap-10">
+          <div className="flex flex-wrap items-center gap-10 p-5 lg:p-0">
             {visibleProjects.map((detail, i) => (
               <a target="_blank" href={detail.link}>
-                <div className=" text-black text-md font-medium w-[340px] h-40 group">
+                <div className=" text-black text-md font-medium lg:w-[340px] h-40 group">
                   <div className="bg-[linear-gradient(90deg,rgba(231,255,135,1)_5%,rgba(207,254,25,1)_40%,rgba(107,222,53,1)_90%)] p-5 h-[85%] flex flex-col gap-2">
                     <div className="text-2xl">
                       {detail.hostingPlatform}
@@ -56,15 +57,16 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-10">
-          <h1 className="text-4xl font-bold">Latest Projects</h1>
-          <p className="text-lg text-[#D1D5DB]">
+        <div className="flex flex-col lg:gap-10">
+          <h1 className="text-4xl font-bold p-5 lg:p-0 bg-[#1c1c1d] lg:bg-[#212124]">Latest Projects</h1>
+          <div className="lg:hidden h-[1px] w-[100vw] bg-gradient-to-r from-blue-500 via-green-400 to-yellow-400"></div>
+          <p className="text-lg text-[#D1D5DB] p-5 lg:p-0">
             I have transformed ideas into remarkable digital products.
           </p>
           {lpDetails.map((detail) => (
-            <div>
-              <div className="bg-[#242427] flex p-10 gap-10 group">
-                <div className="w-[50%] relative flex items-center group-hover:scale-[104%] transition-all duration-500 ease-out">
+            <div className="mb-10 lg:mb-0">
+              <div className="bg-[#242427] flex flex-col lg:flex-row p-10 gap-15 lg:gap-10 group">
+                <div className="lg:w-[50%] relative flex items-center group-hover:scale-[104%] transition-all duration-500 ease-out">
                   <div className="absolute right-0">
                     <img
                       className="h-[280px] shadow-2xl/30"
@@ -76,7 +78,7 @@ export default function Projects() {
                     <img src={detail.desktopImg} alt="" />
                   </div>
                 </div>
-                <div className="w-[50%] flex flex-col gap-5">
+                <div className="lg:w-[50%] flex flex-col gap-5">
                   <h1 className="text-xl">
                     <img className="h-10" src={detail.logo} alt="" />
                   </h1>
