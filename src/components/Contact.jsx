@@ -6,20 +6,23 @@ import "aos/dist/aos.css";
 export default function Contact() {
   return (
     <div className="size-full overflow-auto scrollbar-hide">
-      <div className="bg-[#18181B] w-full h-[950px] flex">
-        <div data-aos="fade-right" className="w-[35%] h-full text-white text-lg p-8 flex flex-col gap-5">
-          <h1 className="text-4xl font-bold">Get in touch</h1>
-          <div className="text-4xl font-bold txt-gradient">
+      <div className="bg-[#18181B] w-full lg:h-[950px] mb-15 flex flex-col lg:flex-row">
+        <div 
+        // data-aos="fade-right"
+         className="lg:w-[35%] h-full text-white text-lg lg:p-8 flex flex-col lg:gap-5">
+          <h1 className="text-4xl font-bold p-5 lg:p-0">Get in touch</h1>
+          <div className="text-4xl font-bold txt-gradient px-5 pb-5 lg:p-0">
             Let's talk about your project
           </div>
-          <p className="mt-5">
+          <div className="lg:hidden h-[1px] w-[100vw] bg-gradient-to-r from-blue-500 via-green-400 to-yellow-400"></div>
+          <p className="mt-5 p-5 lg:p-0">
             Thinking about a new project, a problem to solve, or just want to
             connect? Let's do it!
           </p>
-          <p className="mb-5">
+          <p className="mb-5 p-5 lg:p-0">
             Use the form on this page or get in touch by other means.
           </p>
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-5 p-5 lg:p-0">
             <div className="flex items-center gap-2">
               <Icon path={mdiPhone} size={1} />
               <div>Phone: 9911819654</div>
@@ -65,7 +68,9 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <div data-aos="zoom-in" className="w-[65%] h-fit p-8">
+        <div 
+        // data-aos="zoom-in" 
+        className="lg:w-[65%] h-fit p-8">
           <div className="w-full h-fit relative">
             <div className="size-full bg-[#3F3F46] absolute top-0 left-0"></div>
             <form
@@ -76,36 +81,36 @@ export default function Contact() {
                 Your contact information
               </div>
               <div className="w-full flex flex-col items-center gap-3 p-5">
-                <div className="flex w-full justify-between">
+                <div className="flex flex-col lg:flex-row w-full justify-between lg:text-sm xl:text-base">
                   <input
-                    className="bg-[#232327] border-b border-[#378CE4] w-54 h-12 px-4"
+                    className="bg-[#232327] border-b border-[#378CE4] lg:w-35 xl:w-54 h-12 px-4"
                     type="text"
                     placeholder="First Name"
                   />
                   <input
-                    className="bg-[#232327] border-b border-[#378CE4] w-54 h-12 px-4"
+                    className="bg-[#232327] border-b border-[#378CE4] ;g:w-54 h-12 px-4"
                     type="text"
                     placeholder="Last Name"
                   />
                   <input
-                    className="bg-[#232327] border-b border-[#378CE4] w-54 h-12 px-4"
+                    className="bg-[#232327] border-b border-[#378CE4] lg:w-35 xl:w-54 h-12 px-4"
                     type="text"
                     placeholder="Email Address"
                   />
                 </div>
-                <div className="flex w-full  justify-between">
+                <div className="flex flex-col lg:flex-row w-full  justify-between lg:text-sm xl:text-base">
                   <input
-                    className="bg-[#232327] border-b border-[#378CE4] w-54 h-12 px-4"
+                    className="bg-[#232327] border-b border-[#378CE4] lg:w-40 xl:w-54 h-12 px-4"
                     type="text"
                     placeholder="Company Name"
                   />
                   <input
-                    className="bg-[#232327] border-b border-[#378CE4] w-54 h-12 px-4"
+                    className="bg-[#232327] border-b border-[#378CE4] lg:w-40 xl:w-54 h-12 px-4"
                     type="text"
                     placeholder="Phone Number"
                   />
                   <select
-                    className="bg-[#232327] border-b border-[#378CE4] w-54 h-12 px-4"
+                    className="bg-[#232327] border-b border-[#378CE4] lg:w-40 xl:w-54 h-12 px-4"
                     name=""
                     id=""
                   >
@@ -121,8 +126,8 @@ export default function Contact() {
               <div className="bg-[#27272A] text-lg p-5 w-full">
                 What services do you need for your project?
               </div>
-              <div className="flex flex-col items-center">
-                <div className="flex gap-10 p-5">
+              <div className="flex flex-col lg:items-center">
+                <div className="flex flex-col lg:flex-row gap-2 lg:gap-10 p-5">
                   <div className="flex flex-col gap-2">
                     <div className="flex items-center gap-3">
                       <input className="size-7" type="checkbox" name="" id="" />
@@ -159,7 +164,7 @@ export default function Contact() {
                 How much is the anticipated budget?
               </div>
               <div className="flex flex-col items-center w-full p-5 ">
-                <div className="flex items-center gap-10 w-full">
+                <div className="flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-10 w-full">
                   <div className="flex items-center gap-3">
                     <input type="radio" name="circle" className="size-7" />
                     <label htmlFor="">Less than $2,000</label>
