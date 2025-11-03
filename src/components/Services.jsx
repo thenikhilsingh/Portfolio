@@ -9,7 +9,7 @@ export default function Services() {
     <div className="size-full overflow-auto scrollbar-hide ">
       <div className="flex flex-col lg:flex-row bg-[#222225]">
         <div
-          // data-aos="fade-right"
+          data-aos="fade-right"
           className=" lg:w-[33%] lg:h-[1140px] text-white lg:p-10 flex flex-col lg:gap-10"
         >
           <div className="flex flex-col gap-4 p-5 lg:p-0 bg-[#1f1e1e] lg:bg-[#222225]">
@@ -54,9 +54,7 @@ export default function Services() {
         </div>
         <div className="lg:w-[67%] mb-20 xl:h-[1140px] flex flex-wrap lg:gap-8 lg:p-10 xl:gap-10 p-5 xl:p-10">
           {servicesDetails.map((service) => (
-            <div 
-            // data-aos="zoom-in" 
-            className="lg:w-[47%]">
+            <div data-aos="zoom-in" className="lg:w-[47%]">
               <div className="bg-[linear-gradient(180deg,#b7ff3c,#26d53a)] p-8">
                 <img className="h-12 my-5" src={service.src} alt="" />
                 <h1 className="text-3xl font-bold">{service.heading}</h1>

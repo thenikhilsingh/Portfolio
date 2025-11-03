@@ -74,9 +74,13 @@ export default function About() {
             NIKHIL SINGH
           </div>
           <div className="flex flex-col gap-10 pb-10">
-            <h1 className="text-white font-bold text-3xl lg:text-5xl text-center">Ready to discuss your project?</h1>
-            <div> 
-              <p className="text-white font-bold text-[15px] text-center">Let's super-charge your business today!</p>
+            <h1 className="text-white font-bold text-3xl lg:text-5xl text-center">
+              Ready to discuss your project?
+            </h1>
+            <div>
+              <p className="text-white font-bold text-[15px] text-center">
+                Let's super-charge your business today!
+              </p>
               <NavLink to="/contact">
                 <div className="relative flex  justify-center lg:justify-normal text-black mt-4">
                   <div className="h-13 w-70 bg-[linear-gradient(90deg,rgba(231,255,135,1)_5%,rgba(207,254,25,1)_40%,rgba(107,222,53,1)_90%)] absolute top-0 lg:left-0"></div>
@@ -94,7 +98,12 @@ export default function About() {
               I'm Specialized in
             </h1>
             <div className="flex items-center">
-              <Icon className="hidden lg:block" path={mdiChevronRight} size={2} color="#9898a8" />
+              <Icon
+                className="hidden lg:block"
+                path={mdiChevronRight}
+                size={2}
+                color="#9898a8"
+              />
               <div className=" text-[#A4F025]">
                 <div className="text-center">
                   <h1 className="text-2xl md:text-3xl font-semibold ">
@@ -115,7 +124,7 @@ export default function About() {
                 {backendTechnologies.map((tech, i) => (
                   <div className="flex">
                     <div
-                      // data-aos="fade-right"
+                      data-aos="fade-right"
                       data-aos-delay={i * 200}
                       key={i}
                       className="flex justify-between items-center w-full lg:w-55"
@@ -147,7 +156,7 @@ export default function About() {
                 {frontendTechnologies.map((tech, i) => (
                   <div className="flex">
                     <div
-                      // data-aos="fade-right"
+                      data-aos="fade-right"
                       data-aos-delay={i * 200}
                       key={i}
                       className="flex justify-between items-center w-full lg:w-55"
@@ -172,9 +181,7 @@ export default function About() {
             </div>
           </div>
 
-          <div 
-          // data-aos="fade-up"
-           className="p-10 flex flex-col gap-5 lg:gap-0">
+          <div data-aos="fade-up" className="p-10 flex flex-col gap-5 lg:gap-0">
             {details.map((detail) => (
               <div className="flex flex-col justify-around lg:h-42">
                 <h1 className="flex text-2xl font-bold gap-2">

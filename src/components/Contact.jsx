@@ -7,9 +7,10 @@ export default function Contact() {
   return (
     <div className="size-full overflow-auto scrollbar-hide">
       <div className="bg-[#18181B] w-full lg:h-[950px] mb-15 flex flex-col lg:flex-row">
-        <div 
-        // data-aos="fade-right"
-         className="lg:w-[35%] h-full text-white text-lg lg:p-8 flex flex-col lg:gap-5">
+        <div
+          data-aos="fade-right"
+          className="lg:w-[35%] h-full text-white text-lg lg:p-8 flex flex-col lg:gap-5"
+        >
           <h1 className="text-4xl font-bold p-5 lg:p-0">Get in touch</h1>
           <div className="text-4xl font-bold txt-gradient px-5 pb-5 lg:p-0">
             Let's talk about your project
@@ -68,9 +69,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <div 
-        // data-aos="zoom-in" 
-        className="lg:w-[65%] h-fit p-8">
+        <div data-aos="zoom-in" className="lg:w-[65%] h-fit p-8">
           <div className="w-full h-fit relative">
             <div className="size-full bg-[#3F3F46] absolute top-0 left-0"></div>
             <form
